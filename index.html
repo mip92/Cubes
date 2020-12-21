@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Three.js</title>
+	<script src="js/three.js"></script>
+	<script src="js/OrbitControls.js"></script>
+	<script src="node_modules/dat.gui/build/dat.gui.module.js"></script>
+</head>
+<body>
+
+<p style="position: fixed;color: azure; top: 100px; left: 10px; font-size:40px";>block size:</p> <input type="range" value="2.5" min="0" max="10" id="size" oninput="sizeBlock()"  style="position: fixed; top: 200px; left: 10px; ">
+<p style="position: fixed;color: azure; top: 300px; left: 10px; font-size:40px";>number of blocks</p> <input type="range" value="10" min="0" max="10" id="number" oninput="numberOfBlock()"  style="position: fixed; top: 400px; left: 10px; ">
+<script>
+	function sizeBlock() {
+		let sizes = document.getElementById("size").value;
+		return sizes
+	}
+	function numberOfBlock() {
+		let num = document.getElementById("number").value;
+		return num
+	}
+</script>
+<script src="js/scene.js"></script>
+
+</body>
+</html>
